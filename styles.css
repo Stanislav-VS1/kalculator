@@ -1,88 +1,85 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  border: none;
+button {
+  width: 88px;
+  height: 88px;
+
+  font-size: 30px;
+
+  border: transparent;
+  border-radius: 50px;
+
+  color: #FFFFFF;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+button:hover {
+  opacity: 0.6;
 }
 
-/* Links */
+.layout {
+  width: 100%;
 
-a, a:link, a:visited  {
-  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
-a:hover  {
-  text-decoration: none;
+.container {
+  width: 430px;
+  height: 925px;
+
+  display: flex;
+  padding: 17px 17px 73px 17px;
+
+  background-color: #000000;
+  border-radius: 20px;
 }
 
-/* Common */
+.main {
+  display: flex;
+  align-items: flex-end;
 
-aside, nav, footer, header, section, main {
-  display: block;
+  position: relative;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  font-size: inherit;
-  font-weight: inherit;
+.numbers {
+  width: 306px;
+
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 14px;
 }
 
-ul, ul li {
-  list-style: none;
+.numbers button {
+  background-color: #333333;
 }
 
-img {
-  vertical-align: top;
+.numbers button:nth-child(1) {
+  width: 190px;
 }
 
-img, svg {
-  max-width: 100%;
-  height: auto;
+.calculations {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
 }
 
-address {
-  font-style: normal;
+.calculations button {
+  background-color: #F1A33B;
 }
 
-/* Form */
-
-input, textarea, button, select {
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  background-color: transparent;
+.clear {
+  position: absolute;
+  top: 340px;
 }
 
-input::-ms-clear {
-  display: none;
+.clear button {
+  background-color: #A5A5A5;
+  color: #000000;
 }
 
-button, input[type="submit"] {
-  display: inline-block;
-  box-shadow: none;
-  background-color: transparent;
-  background: none;
-  cursor: pointer;
-}
+.output {
+  position: absolute;
+  right: 0;
+  top: 240px;
 
-input:focus, input:active,
-button:focus, button:active {
-  outline: none;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-label {
-  cursor: pointer;
-}
-
-legend {
-  display: block;
+  font-size: 40px;
+  color: #fff;
 }

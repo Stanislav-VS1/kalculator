@@ -1,17 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Document</title>
-  <link href="styles.css" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Document</title>
+    <link href="style-reset.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
+    <div class="layout">
+      <div class="container">
+        <div class="main">
+          <div class="output"></div>
 
-<div class="container">
-  
-</div>
+          <div class="clear">
+            <button data-symbol="AC">AC</button>
+          </div>
 
-</body>
+          <div class="numbers">
+            <button data-symbol="0">0</button>
+            <button data-symbol=",">,</button>
+            <button data-symbol="1">1</button>
+            <button data-symbol="2">2</button>
+            <button data-symbol="3">3</button>
+            <button data-symbol="4">4</button>
+            <button data-symbol="5">5</button>
+            <button data-symbol="6">6</button>
+            <button data-symbol="7">7</button>
+            <button data-symbol="8">8</button>
+            <button data-symbol="9">9</button>
+          </div>
+
+          <div class="calculations">
+            <button data-symbol="÷">÷</button>
+            <button data-symbol="x">x</button>
+            <button data-symbol="-">-</button>
+            <button data-symbol="+">+</button>
+            <button data-symbol="=">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
